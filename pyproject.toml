@@ -1,0 +1,11 @@
+[tool.black]
+target-version = ['py310']
+line-length = 110
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip_glob = ['.env', '.local*']
+skip = ['migrations']
+filter_files = true

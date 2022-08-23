@@ -1,0 +1,27 @@
+[flake8]
+max-line-length = 110
+select = T,C,E,F,W,B,B950
+ignore =
+    # module level import
+    E402,
+    # bare exception
+    E722,
+    # white space before :
+    E203,
+    # white space before operator
+    W503,
+    # max line length
+    E501
+exclude =
+    .git,
+    .venv,
+    data,
+    .env,
+    .history,
+    .vscode,
+    .idea,
+    .local,
+    # auto generated files are excluded
+    search/category_mapping/models/v1/mapping.py,
+    search/query_results_sorting/sorting.py,
+    */migrations/*
